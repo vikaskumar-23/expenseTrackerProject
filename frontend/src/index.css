@@ -1,0 +1,26 @@
+/* Simple dark blue background for the whole app */
+body, #root {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+  background: #bbbbbb !important; /* White-greyish */
+  color: #111;
+  letter-spacing: 0.01em;
+}
+a, .lnk {
+  color: #FFD600;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover, .lnk:hover {
+  color: #111;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  background: #bbbbbb;
+}
+::-webkit-scrollbar-thumb {
+  background: #111;
+  border-radius: 4px;
+}

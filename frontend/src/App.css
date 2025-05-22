@@ -1,0 +1,53 @@
+.App {
+  text-align: center;
+  padding-top: 0;
+  background: #bbbbbb !important;
+}
+button:not(.btn-close), .btn:not(.btn-close), .btnStyle:not(.btn-close) {
+  background: #FFD600 !important;
+  border: 2px solid #111 !important;
+  color: #111 !important;
+  font-weight: 600;
+  border-radius: 24px;
+  padding: 0.6rem 2rem;
+  font-size: 1rem;
+  box-shadow: none;
+  transition: background 0.2s, color 0.2s, transform 0.1s;
+}
+button:hover, .btn:hover, .btnStyle:hover {
+  background: #fff !important;
+  color: #FFD600 !important;
+  border: 2px solid #FFD600 !important;
+  transform: translateY(-2px) scale(1.04);
+}
+button.btn-close, .btn.btn-close, .btnStyle.btn-close, .modal-header .btn-close, .toast .btn-close {
+  background: none !important;
+  border: none !important;
+  color: #111 !important;
+  box-shadow: none !important;
+  padding: 0.25em 0.25em;
+  opacity: 1;
+  filter: invert(0) brightness(0) !important;
+}
+input, select, textarea, .form-control, .form-select {
+  background: #fff !important;
+  color: #111 !important;
+  border: 1.5px solid #111 !important;
+  border-radius: 10px !important;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+input:focus, select:focus, textarea:focus {
+  border-color: #FFD600 !important;
+  box-shadow: 0 0 0 2px #FFD60044;
+}
+.minimal-modal .modal-content {
+  background: #fff !important;
+  border: 2px solid #111 !important;
+  border-radius: 16px !important;
+  color: #111 !important;
+}
+.modal-backdrop.show {
+  opacity: 0.2 !important; /* More transparent */
+  background: #000 !important;
+}

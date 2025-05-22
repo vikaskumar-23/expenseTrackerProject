@@ -1,0 +1,165 @@
+.filterRow {
+  display: flex;
+  align-items: flex-end; /* Aligns all children to the bottom */
+  justify-content: space-between;
+  padding: 2vw 2vw 1vw 2vw;
+  background: #ffffc0;
+  border-radius: 1.2em;
+  border: 2px solid #111 !important;
+  box-shadow: none;
+  margin-bottom: 2vw;
+  gap: 2vw;
+  flex-wrap: wrap;
+}
+
+.filterRow label {
+    color: #111 !important;
+    font-weight: 600;
+}
+
+.data-table {
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #000000;
+  border-radius: 16px;
+  overflow: hidden;
+  font-size: 1.07rem;
+  box-shadow: none;
+  border: 2px solid #111 !important;
+}
+.data-table thead th {
+  background: #FFD600;
+  color: #111;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border: 1.5px solid #111 !important;
+}
+.data-table tbody tr {
+  border-bottom: 1.5px solid #111 !important;
+}
+.data-table tbody tr:last-child {
+  border-bottom: none;
+}
+.data-table tbody td {
+  background: #fff;
+  color: #111;
+  border: 1.5px solid #111 !important;
+}
+
+.icons-handle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+
+
+
+.iconBtnBox{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 0; /* Remove padding */
+    border: none !important; /* Remove border */
+    border-radius: 0; /* Remove border radius */
+    background: none; /* Remove background */
+}
+
+.iconActive{
+    background: #FFD600 !important;
+    color: #111 !important;
+    border-radius: 12px;
+    padding: 0.3rem 1.2rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border: 2px solid #111 !important;
+}
+
+.iconDeactive{
+    background: #fff !important;
+    color: #111 !important;
+    border-radius: 12px;
+    padding: 0.3rem 1.2rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border: 2px solid #FFD600 !important;
+}
+
+.addNew, .big-btn, .logout-btn {
+    background: #FFD600 !important;
+    border: 2px solid #111 !important;
+    color: #111 !important;
+    font-size: 1rem !important;
+    font-weight: 700 !important;
+    padding: 0.6rem 2rem !important;
+    border-radius: 12px !important; /* Match summary button */
+    min-width: unset;
+}
+.addNew:hover, .big-btn:hover, .logout-btn:hover {
+    background: #fff !important;
+    color: #111 !important;
+    border: 2px solid #111 !important;
+}
+
+.big-btn {
+  min-width: 140px;
+  white-space: nowrap;
+  font-size: 1rem !important;
+  font-weight: 700 !important;
+  padding: 0.6rem 2rem !important;
+  border-radius: 12px !important;
+}
+
+.filter-controls {
+  display: flex;
+  align-items: flex-end;
+  gap: 1vw;
+  flex: 2 1 0;
+  min-width: 0;
+  flex-wrap: wrap;
+}
+
+.filter-group {
+  flex: 1 1 0;
+  min-width: 120px;
+}
+
+.filter-select {
+  width: 100%;
+}
+
+.filter-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center !important;
+  font-size: 1em !important;
+  font-weight: 700 !important;
+  white-space: nowrap;
+  border-radius: 0.75em !important;
+}
+
+@media (max-width: 900px) {
+  .filterRow {
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+  }
+  .filter-controls {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.7em;
+    width: 100%;
+  }
+  .iconBtnBox {
+    margin-left: 0 !important;
+    justify-content: center !important;
+    width: 100%;
+  }
+  .addNew {
+    width: 100%;
+    margin: 0.5em 0 0 0 !important;
+  }
+}
+
